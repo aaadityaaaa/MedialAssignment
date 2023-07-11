@@ -9,8 +9,8 @@ import UIKit
 
 extension UIColor {
     
-    class func navBarBackgroundColor() -> UIColor {
-        return UIColor(hex: 0x0E6FFF)
+    class func textLabelColor() -> UIColor {
+        return UIColor(hex: 0xf77f00)
     }
                     
 }
