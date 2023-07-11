@@ -78,7 +78,7 @@ extension PDFViewerViewController {
         
         if #available(iOS 14.0, *) {
             let documentTypes = UTType.types(tag: "pdf", tagClass: UTTagClass.filenameExtension, conformingTo: nil)
-            documentPicker = UIDocumentPickerViewController(forOpeningContentTypes: [.data], asCopy: true)
+            documentPicker = UIDocumentPickerViewController(forOpeningContentTypes: documentTypes, asCopy: true)
         } else {
             documentPicker = UIDocumentPickerViewController(documentTypes: [pdfType], in: .import)
         }
